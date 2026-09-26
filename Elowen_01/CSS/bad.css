@@ -17,3 +17,51 @@ padding: 3rem;
 padding: 3rem;
 border: 15px dotted lime;
 }
+
+.logo {
+    background-color: red;
+    padding: 2rem;
+    transform: rotate(-4deg);
+}
+
+.logo h1 {
+    color:cyan;
+    font-size: 3rem;
+    text-shadow: 4px 4px purple;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: square;
+    background-color: maroon;
+    padding: 2rem;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 1rem;
+    color: yellow;
+    background-color: blue;
+    font-size: 1.5rem;
+}
+
+nav ul li a.current {
+    color: lime;
+    background-color: cyan;
+}
+
+nav ul a:hover {
+    background-color: red;
+    color: blue;
+    transform: rotate(15deg) scale(1.5);
+    transition: 2s;
+}
+
+/* desktop version */
+@media screen and (min-width: 769px) {
+    nav,
+    nav ul {
+        flex-direction: row;
+    }
+}
