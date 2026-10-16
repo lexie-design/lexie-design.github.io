@@ -1,12 +1,121 @@
-/*
-reset - this sets ALL elements to have zero padding and margin,
-and to display in the more logical border-box style
-*/
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
+/* Simple CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f1ea;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background-color 0.4s ease;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    max-width: 480px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    border: 3px solid #cccccc;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .lyric {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555555;
+  }
+  
+  /* Friendship Bracelet Styling */
+  .bracelet-container {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .bracelet {
+    display: inline-block;
+    background-color: #fff8dc;
+    border: 2px dashed #d4af37;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-family: monospace;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #333333;
+  }
+  
+  .surprise-box {
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #eeeeee;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Controls */
+  .control-group {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  
+  .control-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+  
+  select,
+  input[type="text"],
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #bbbbbb;
+  }
+  
+  button {
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #555555;
+  }
+  
+  /* Class toggled by the button in JavaScript */
+  .encore-mode {
+    border-color: #d4af37;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.7);
+  }
