@@ -75,7 +75,11 @@ window.addEventListener('DOMContentLoaded', function () {
         albumCard.style.backgroundColor = '#ffffff';
         albumTitle.textContent = 'Taylor Swift Era Mixer';
         albumLyric.textContent = 'Pick an album or play with the colors below!';
-      }
+      } else if (album === 'showgirl') {
+      document.body.style.backgroundColor = '#f6d365';
+      albumCard.style.backgroundColor = '#fffdf7';
+      albumTitle.textContent = 'The Life of a Showgirl';
+      albumLyric.textContent = '"Step into the spotlight and let the curtains rise."';
     });
   
     // EVENT 2: Typing in the text input updates the Favorite Track text live
