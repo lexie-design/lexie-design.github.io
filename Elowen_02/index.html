@@ -1,26 +1,55 @@
-<!doctype html>
-
-<html lang="en-US">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-	<title>WRA Assignment 02</title>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/stylesheet.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 02 - Taylor Swift Era Customizer</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
 </head>
-
-
 <body>
 
-	<h1>Event Listener Example</h1>
+  <main class="card" id="era-card">
+    <h1 id="era-title">The Eras Tour Customizer</h1>
+    <p class="lyric" id="era-lyric">"It's been a long time coming..."</p>
 
-	<button class="clickButton">Click Me To See Info About The Event</button>
+    <!-- Friendship Bracelet Preview -->
+    <div class="bracelet-container">
+      <p class="label">Your Friendship Bracelet:</p>
+      <div class="bracelet" id="bracelet-display">SWIFTIE</div>
+    </div>
 
-	<script src="js/script.js"></script>
+    <!-- Surprise Song Box -->
+    <p class="surprise-box" id="surprise-text">
+      Click the button below to reveal tonight's acoustic surprise song!
+    </p>
 
+    <hr>
+
+    <!-- UI Element 1: <select> menu -->
+    <div class="control-group">
+      <label for="era-select">1. Choose Your Era (Changes theme & lyric):</label>
+      <select id="era-select">
+        <option value="default">-- Select an Era --</option>
+        <option value="lover">Lover</option>
+        <option value="folklore">folklore</option>
+        <option value="reputation">reputation</option>
+        <option value="midnights">Midnights</option>
+      </select>
+    </div>
+
+    <!-- UI Element 2: <input> text box -->
+    <div class="control-group">
+      <label for="bracelet-input">2. Type Your Bracelet Text (Updates live):</label>
+      <input type="text" id="bracelet-input" placeholder="e.g. FEARLESS" maxlength="18">
+    </div>
+
+    <!-- UI Element 3: <button> element -->
+    <div class="control-group">
+      <label>3. Encore Mode (Toggles surprise song & border):</label>
+      <button type="button" id="surprise-btn">Reveal Surprise Song</button>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
-
 </html>
