@@ -56,12 +56,12 @@ window.addEventListener('DOMContentLoaded', function () {
         albumTitle.textContent = 'folklore';
         albumLyric.textContent = '"Passed down like folk songs, the love lasts so long."';
       } else if (album === 'evermore') {
-        document.body.style.backgroundColor = '#e58e26';
+        document.body.style.backgroundColor = '#BE6A3F';
         albumCard.style.backgroundColor = '#fff6eb';
         albumTitle.textContent = 'evermore';
         albumLyric.textContent = '"Wherever you stray, I follow."';
       } else if (album === 'midnights') {
-        document.body.style.backgroundColor = '#30336b';
+        document.body.style.backgroundColor = '#1e264c';
         albumCard.style.backgroundColor = '#eef0ff';
         albumTitle.textContent = 'Midnights';
         albumLyric.textContent = '"Meet me at midnight."';
@@ -71,10 +71,10 @@ window.addEventListener('DOMContentLoaded', function () {
         albumTitle.textContent = 'The Tortured Poets Department';
         albumLyric.textContent = '"All\'s fair in love and poetry."';
       } else if (album === 'showgirl') {
-        document.body.style.backgroundColor = '#f6d365';
+        document.body.style.backgroundColor = '#e46c32';
         albumCard.style.backgroundColor = '#fffdf7';
         albumTitle.textContent = 'The Life of a Showgirl';
-        albumLyric.textContent = '"Step into the spotlight and let the curtains rise."';
+        albumLyric.textContent = 'Baby, That\'s Show Business.';
       } else {
         document.body.style.backgroundColor = '#f4f1ea';
         albumCard.style.backgroundColor = '#ffffff';
