@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
+    padding: 2rem;
+    transition: color 0.2s, background-color 0.2s;
+  }
+  
+  .serif {
+    font-family: "Times New Roman", serif;
+  }
+  
+  .sans {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  body.dark-mode {
+    color: #fff;
+    background-color: #222;
+  }
+  
+  button {
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+  }
