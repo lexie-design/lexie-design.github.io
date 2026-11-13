@@ -3,58 +3,83 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore Western Governors University programs and estimate tuition by six-month term.">
-  <title>WGU Program Explorer</title>
+  <meta name="description" content="Explore Michigan State University's latest college admissions and tuition data.">
+  <title>MSU Admissions Snapshot</title>
   <link rel="stylesheet" href="css/stylesheet.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="WGU Program Explorer home"><span class="brand-mark">W</span><span>WGU <span class="brand-light">Program Explorer</span></span></a>
-    <a class="header-link" href="https://www.wgu.edu/online-degree-programs.html" target="_blank" rel="noopener">Explore WGU <span aria-hidden="true">↗</span></a>
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">MSU</span>
+      <span>College Snapshot</span>
+    </a>
+    <a
+      class="source-link"
+      href="https://opencollegedata.org/colleges/michigan-state-university/"
+      target="_blank"
+      rel="noopener"
+    >
+      View source data <span aria-hidden="true">↗</span>
+    </a>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Find a path that fits</p>
-        <h1>What could you<br><em>learn next?</em></h1>
-        <p class="hero-intro">Browse WGU degree programs and get a clear starting point for tuition planning.</p>
+      <p class="eyebrow">Spartan admissions, in numbers</p>
+      <h1>Could MSU<br><em>be your next?</em></h1>
+      <p class="intro">
+        A quick, visual look at Michigan State University's reported admissions
+        profile and tuition.
+      </p>
+      <div class="hero-stamp" aria-hidden="true">
+        <span>2025</span>
+        <strong>26</strong>
+        <span>CDS</span>
       </div>
-      <div class="hero-note"><span class="note-star" aria-hidden="true">✳</span><p>Built around your pace.<br><strong>Designed for your goals.</strong></p></div>
     </section>
 
-    <section class="explorer" aria-labelledby="explorer-title">
+    <section class="snapshot" aria-labelledby="snapshot-heading">
       <div class="section-heading">
-        <div><p class="eyebrow">Your next step starts here</p><h2 id="explorer-title">Explore programs</h2></div>
-        <p class="result-count" id="result-count" aria-live="polite">Loading programs…</p>
+        <div>
+          <p class="eyebrow">Common Data Set · 2025–26</p>
+          <h2 id="snapshot-heading">MSU admissions snapshot</h2>
+        </div>
+        <p id="status" class="status" aria-live="polite">Loading data…</p>
       </div>
 
-      <div class="filters" role="search">
-        <label class="search-field"><span class="sr-only">Search programs</span><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="search-input" placeholder="Search programs or subjects" autocomplete="off"></label>
-        <label><span class="sr-only">Filter by college</span><select id="college-filter"><option value="all">All colleges</option></select></label>
-        <label><span class="sr-only">Filter by degree level</span><select id="level-filter"><option value="all">All degree levels</option><option value="Bachelor's">Bachelor's</option><option value="Master's">Master's</option></select></label>
-        <label><span class="sr-only">Sort programs</span><select id="sort-filter"><option value="featured">Featured first</option><option value="price-low">Tuition: low to high</option><option value="price-high">Tuition: high to low</option><option value="name">Program name</option></select></label>
-      </div>
+      <div id="stats-grid" class="stats-grid" aria-live="polite"></div>
 
-      <div id="program-list" class="program-grid" aria-live="polite"></div>
-      <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">✳</span><h3>No programs match those filters</h3><p>Try a different search or choose another college.</p><button id="reset-filters" class="text-button">Clear filters</button></div>
+      <p class="data-note">
+        Admissions and tuition figures are reported for the 2025–26 Common Data
+        Set. Tuition is not the full cost of attendance and does not include
+        housing, meals, or financial aid. The middle 50% test range describes
+        students who submitted scores; it is not an admissions requirement.
+      </p>
+
+      <aside class="source-note">
+        <span class="source-icon" aria-hidden="true">i</span>
+        <p>
+          Data from Open College Data, which publishes college-filed Common Data
+          Set figures and indicates how each value was sourced or checked. This
+          snapshot is for exploration, not a prediction of admission or a
+          tuition quote.
+        </p>
+      </aside>
     </section>
-
-    <section class="tuition-panel" aria-labelledby="tuition-title">
-      <div class="tuition-intro"><p class="eyebrow">Plan a little further ahead</p><h2 id="tuition-title">Estimate your tuition</h2><p>WGU charges a flat tuition rate for each six-month term. Pick a program and term count to estimate tuition plus the resource fee.</p></div>
-      <form id="estimate-form" class="estimate-form">
-        <label for="program-select">Program</label>
-        <select id="program-select" required><option value="">Choose a program</option></select>
-        <label for="term-count">Number of six-month terms</label>
-        <div class="term-row"><input id="term-count" type="number" min="1" max="12" value="2" required><span>terms</span><button type="submit" class="estimate-button">Estimate cost <span aria-hidden="true">→</span></button></div>
-        <div id="estimate-result" class="estimate-result" aria-live="polite"><span class="estimate-placeholder">Your estimate will appear here.</span></div>
-      </form>
-    </section>
-
-    <section class="how-it-works"><span class="how-icon" aria-hidden="true">✳</span><div><h2>How WGU tuition works</h2><p>Tuition is charged by six-month term, not by credit or course. The estimate is a planning tool: actual cost depends on your program, enrollment status, eligibility, and any program-specific fees. Completing more coursework in a term may help you finish in fewer terms.</p></div><a href="https://www.wgu.edu/financial-aid-tuition.html" target="_blank" rel="noopener">Tuition details <span aria-hidden="true">↗</span></a></section>
   </main>
 
-  <footer><p>Program and tuition information is for exploration only. Always confirm current details with WGU.</p><p id="data-updated"></p></footer>
+  <footer>
+    <p>Data: Open College Data · Common Data Set, 2025–26 · CC BY 4.0</p>
+    <p>
+      <a
+        href="https://opencollegedata.org/colleges/michigan-state-university/2025-26.json"
+        target="_blank"
+        rel="noopener"
+      >
+        Open the JSON response
+      </a>
+    </p>
+  </footer>
 </body>
 </html>
